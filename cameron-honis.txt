@@ -1,0 +1,139 @@
+https://codepen.io/CameronHonis/pen/qBbBZRr?editors=1100
+    1. What is Semantic HTML? 
+    HTML that is useful in describing the crucial details of the page.
+
+    2. What is HTML used for? 
+    As a markup language to display content to a webpage
+
+    3. What is an attribute and where do we put it? 
+    An attribute is a property belonging to an HTML tag that doesn't appear on screen. It goes inside the first tag, after the tag name.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    The h1 (header) tag is used to visually seperate blocks of content in an ordered fashion. It takes precedent over all the other header tags
+
+    5. Name two tags that have required attributes
+    Anchor (a) tag, Image (img) tag
+
+    6. What do we put in the head of our HTML document? 
+    configuration and preloading data
+
+    7. What is an id? 
+    Used as a way to differential similar tags when formatting with CSS.
+
+    8. What elements can I add an id to? 
+    all elements.
+
+    9. How many times can I use the same id on a page? 
+    only once.
+
+    10. What is a class?
+    Another way of grouping tags when formatting with CSS.
+
+    11. What elements can I add a class to? 
+    all elements
+
+    12. How many times can I use the same class on a page? 
+    as many as you wish.
+
+    13. How do I get my link to open in a new tab?
+    set the target attribute to "_blank"
+
+    14. What is the alt attribute in the image tag used for? 
+    to display text if the image fails to load. also to assist those using a site-viewer to view the site.
+
+    15. How do I reference an id?
+    use the "#", followed by the id name.
+
+    16. What is the difference between a section and a div
+    sections are considered semantic HTML and are larger containers, while divs are not semantic, and act as smaller containers usually inside the larger container
+
+    17. What is CSS used for? 
+    styling/formatting HTML
+
+    18. How to we select an element? Example - every h2 on the page
+    h2{}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    a class is used to group tags together, while an id is used to differential tags.
+    Class Example, if you have 3 anchor tags parented to the same tag and you want to change the color of these.
+    ID Example, if you have 3 anchor tags paretned to the same tag but you only want to change the color of the first anchor tag.
+
+    20. How do we select classes in CSS?
+    dot notation - .ClassName{}
+
+    21. How do we select a p element with a single class of “human””?
+    p.human{}
+
+    22. What is a parent child selector? When would this be useful? 
+    a selector that takes the hierarchy of the tags into consideration. So if you want to only change the color of the p tag inside any tag with class of "A"- .A p{}
+
+    23. How do you select all links within a div with the class of sidebar?
+    div a.sidebar{}
+
+    24. What is a pseudo selector?
+    a selector that selects elements that are in a specific state
+
+    25. What do we use the change the spacing between lines?
+    in CSS, change the line-height property
+
+    26. What do we use to change the spacing between letters?
+    in CSS, change the letter-spacing property
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    in CSS, change the text-transform to uppercase,lowercase,capitalize respectively
+
+    28. How do I add a 1px border around my div that is dotted and black?
+    in CSS, change the border property to 1px dotted black
+
+    29. How do I select everything on the page? 
+    Ctrl+A
+
+    30. How do I write a comment in CSS?
+    use /* to open the comment and */ to close
+
+    31. How do I find out what file I am in, when I am using the command line? 
+    use the "pwd" command
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    use the "ls" command
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    use the "rm" command, it wont ask you if youre sure or store a temporary copy in recycling bin
+
+    34. Why should I use version control? 
+    in case of an unexpected outage, so you wont lose your work
+
+    35. How often should I commit to github?
+    about every 20 minutes
+
+    36. What is the command we would use to push our repo up to github? 
+    use the "git push" command
+
+    37. Walk me through Lambda's git flow. 
+    1. fork from original source, if you dont own the source
+    2. copy the URL under the "Create clone" button
+    3. use "git clone URL^" in terminal
+    4. make changes to directory
+    5. use "git add ." in terminal to stage the saving process
+    6. use "git commit -m 'Message to self'" in terminal to override current version
+    7. use "git push -u origin 'master-branch-name'" in terminal to push changes to the repository on github
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    A block element will take up as much vertical space as needed and all the horizontal space.
+    An inline element will take up as much vertical and horizontal space as needed.
+
+    2. What happens when an element is positioned absolutely? 
+    resizing the screen/surrounding elements will not change the position
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    set the display property to inline-block and set the width property to any spacial value
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    block by default: paragraph tag, header tag, div tag
+    inline by default: anchor tag, span tag
+    block-inline by default: image tag
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
